@@ -12,7 +12,7 @@ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql
 ```
 docker exec -it mysql  mysql -uroot -ppassword
 ```
-## Run app for Local
+## Run app for local
 1.  Clone repo
     ```
     git clone https://github.com/sean830314/flask-restful-example.git
