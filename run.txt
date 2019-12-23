@@ -1,8 +1,8 @@
 docker pull mysql
-docker exec -it mysql  mysql -uroot -ppassword
 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql
-pip install -r requirements.txt
+docker exec -it mysql  mysql -uroot -ppassword
 cd Desktop/flask-restful-example/
+pip install -r requirements.txt
 python3 -m venv flask_venv
 source flask_venv/bin/activate
 docker exec -i mysql  mysql -uroot -ppassword <<< "CREATE DATABASE flask_demo;"
